@@ -10,24 +10,24 @@
       "stamp": "1789531663564-a261078510e9486382fb4b4e9d3d8d05"
     },
     "done:2026-09-16:recall": {
-      "value": true,
-      "stamp": "1789571522655-9249293c6b764b75b89ad1447882892f"
+      "value": false,
+      "stamp": "1789571554263-9249293c6b764b75b89ad1447882892f"
     },
     "done:2026-09-16:read": {
-      "value": true,
-      "stamp": "1789571522656-9249293c6b764b75b89ad1447882892f"
+      "value": false,
+      "stamp": "1789571554264-9249293c6b764b75b89ad1447882892f"
     },
     "done:2026-09-16:exercise": {
-      "value": true,
-      "stamp": "1789571522657-9249293c6b764b75b89ad1447882892f"
+      "value": false,
+      "stamp": "1789571554265-9249293c6b764b75b89ad1447882892f"
     },
     "done:2026-09-16:oral": {
-      "value": true,
-      "stamp": "1789571522658-9249293c6b764b75b89ad1447882892f"
+      "value": false,
+      "stamp": "1789571554266-9249293c6b764b75b89ad1447882892f"
     },
     "done:2026-09-16:note": {
-      "value": true,
-      "stamp": "1789571522659-9249293c6b764b75b89ad1447882892f"
+      "value": false,
+      "stamp": "1789571554267-9249293c6b764b75b89ad1447882892f"
     },
     "unlock:2026-09-17": {
       "value": true,
