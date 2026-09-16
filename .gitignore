@@ -1,0 +1,5 @@
+﻿__pycache__/
+*.pyc
+shared_progress.json
+study_widget_state.json*
+study_widget_settings.json

@@ -1,0 +1,526 @@
+{
+  "version": 2,
+  "course": "c17-20260916",
+  "weeks": [
+    {
+      "title": "C의 실행과 제어 흐름",
+      "days": [
+        {
+          "title": "C 첫 실행과 공부 방법",
+          "sections": [
+            "roadmap",
+            "foundations"
+          ],
+          "scope": "학습 지도와 첫 C 프로그램의 각 줄",
+          "exercise": "Hello 프로그램을 손으로 쓰고 각 줄의 역할 설명",
+          "oral": "소스·컴파일·실행과 출력·반환 구분"
+        },
+        {
+          "title": "자료형과 초기화",
+          "sections": [
+            "c-types"
+          ],
+          "scope": "정수·실수·문자·bool, 선언과 초기화",
+          "exercise": "5/2와 5/2.0을 예측하고 출력 형식 맞추기",
+          "oral": "자료형·변수·초기값과 sizeof의 의미"
+        },
+        {
+          "title": "산술과 증감 연산",
+          "sections": [
+            "c-operators"
+          ],
+          "scope": "대입·산술·전위·후위 증감과 평가 순서",
+          "exercise": "n=4, p=n--, q=--n을 문장별 표로 적기",
+          "oral": "전위/후위 차이와 위험한 복합 식 설명"
+        },
+        {
+          "title": "논리 연산과 조건문",
+          "sections": [
+            "c-logic"
+          ],
+          "scope": "비교·AND/OR/NOT, if/else와 단락 평가",
+          "exercise": "범위 검사와 0 나누기 보호 조건 직접 작성",
+          "oral": "논리 AND와 비트 AND가 다른 이유"
+        },
+        {
+          "title": "반복문과 상태 추적",
+          "sections": [
+            "c-loops"
+          ],
+          "scope": "for·while·do while, break·continue",
+          "exercise": "1부터 4까지 합과 8의 반감을 표로 추적",
+          "oral": "조건 검사 횟수와 본문 실행 횟수 구분"
+        },
+        {
+          "title": "함수와 값 전달",
+          "sections": [
+            "c-functions"
+          ],
+          "scope": "함수 선언·정의, 인자·매개변수·반환",
+          "exercise": "twice와 change 호출 후 원본 값 예측",
+          "oral": "C의 값 전달과 출력·반환의 차이"
+        },
+        {
+          "title": "C 제어 흐름 통합 복습",
+          "sections": [
+            "c-types",
+            "c-operators",
+            "c-logic",
+            "c-loops",
+            "c-functions"
+          ],
+          "scope": "첫 여섯 단계의 예제를 가리고 다시 작성",
+          "exercise": "조건을 만족하는 1~10의 합을 함수로 작성",
+          "oral": "변수가 바뀌는 순서를 줄마다 말하기"
+        }
+      ]
+    },
+    {
+      "title": "메모리와 데이터 표현",
+      "days": [
+        {
+          "title": "지역변수와 전역변수",
+          "sections": [
+            "c-scope"
+          ],
+          "scope": "범위·수명·static·전역 상태",
+          "exercise": "visit 세 번의 local/calls/total 표 작성",
+          "oral": "지역/전역과 자동/정적 저장 기간 구분"
+        },
+        {
+          "title": "비트 연산과 마스크",
+          "sections": [
+            "c-bits"
+          ],
+          "scope": "이진수·AND/OR/XOR/NOT·시프트",
+          "exercise": "권한 비트를 켜고 끄는 과정을 이진수로 적기",
+          "oral": "비트/논리 연산과 unsigned 사용 이유"
+        },
+        {
+          "title": "배열과 문자열",
+          "sections": [
+            "c-arrays"
+          ],
+          "scope": "인덱스·길이·연속 배치·널 문자",
+          "exercise": "세 점수의 평균과 문자열 크기 예측",
+          "oral": "배열 경계와 문자열 종료 조건 설명"
+        },
+        {
+          "title": "포인터와 주소",
+          "sections": [
+            "c-pointers"
+          ],
+          "scope": "주소·역참조·배열과 포인터·swap",
+          "exercise": "swap을 주소와 값 그림으로 직접 추적",
+          "oral": "포인터를 넘겨도 C는 값 전달인 이유"
+        },
+        {
+          "title": "구조체와 노드",
+          "sections": [
+            "c-structs"
+          ],
+          "scope": "멤버·배열·구조체 포인터·자기 참조",
+          "exercise": "학생 구조체 복사와 포인터 수정 비교",
+          "oral": "구조체/배열 및 점/화살표 차이"
+        },
+        {
+          "title": "동적 할당과 수명",
+          "sections": [
+            "c-memory"
+          ],
+          "scope": "malloc·실패 검사·free·소유권",
+          "exercise": "학생 세 명의 동적 배열을 안전하게 사용하기",
+          "oral": "누수·해제 후 접근·지역변수 주소의 문제"
+        },
+        {
+          "title": "C 메모리 통합 복습",
+          "sections": [
+            "c-scope",
+            "c-arrays",
+            "c-pointers",
+            "c-structs",
+            "c-memory"
+          ],
+          "scope": "값·주소·형식·수명을 한 프로그램에서 연결",
+          "exercise": "학생 배열 평균 함수를 전역변수 없이 설계",
+          "oral": "각 객체의 소유자·수명·범위 설명"
+        }
+      ]
+    },
+    {
+      "title": "자료구조와 알고리즘의 출발",
+      "days": [
+        {
+          "title": "복잡도와 로그",
+          "sections": [
+            "complexity"
+          ],
+          "scope": "입력 크기·기본 연산·Big O와 Θ",
+          "exercise": "C 반복문 순차/중첩의 실행 횟수 계산",
+          "oral": "O 자체가 최악을 뜻하지 않는 이유"
+        },
+        {
+          "title": "배열과 연결 리스트 구현",
+          "sections": [
+            "linear"
+          ],
+          "scope": "C 노드 연결·삽입·삭제와 연속 배열 비교",
+          "exercise": "10→30 사이에 20 노드를 연결하고 되돌리기",
+          "oral": "삽입 위치 탐색 비용과 연결 변경 비용 구분"
+        },
+        {
+          "title": "스택과 큐 구현",
+          "sections": [
+            "linear"
+          ],
+          "scope": "LIFO/FIFO·배열 스택·원형 큐",
+          "exercise": "빈 상태/가득 찬 상태와 삽입·제거 추적",
+          "oral": "ADT와 구현, 자료구조 스택과 호출 스택 구분"
+        },
+        {
+          "title": "재귀와 이진 탐색",
+          "sections": [
+            "recursion"
+          ],
+          "scope": "C 호출 스택·종료 조건·정렬 가정",
+          "exercise": "sum_to(3)과 배열에서 6 찾기 추적",
+          "oral": "재귀 공간 비용과 이진 탐색의 조건"
+        },
+        {
+          "title": "트리와 BST",
+          "sections": [
+            "trees"
+          ],
+          "scope": "트리 용어·순회·BST 검색/삽입/삭제",
+          "exercise": "8,3,10,1,6,14 트리와 중위 순회 작성",
+          "oral": "BST 연산이 높이에 의존하는 이유"
+        },
+        {
+          "title": "힙과 균형 트리",
+          "sections": [
+            "trees"
+          ],
+          "scope": "최소 힙·AVL·Red-Black·B-tree",
+          "exercise": "최소 힙에 값 삽입 후 위로 올리는 과정",
+          "oral": "힙/BST 목적과 균형 유지의 비용"
+        },
+        {
+          "title": "기초 정렬과 C 구현",
+          "sections": [
+            "sorting"
+          ],
+          "scope": "삽입·선택·버블·안정성",
+          "exercise": "C 삽입 정렬에서 [3,1,2] 상태 추적",
+          "oral": "알고리즘 불변식과 안정성의 의미"
+        }
+      ]
+    },
+    {
+      "title": "알고리즘 확장과 선택",
+      "days": [
+        {
+          "title": "병합과 퀵 정렬",
+          "sections": [
+            "sorting"
+          ],
+          "scope": "분할정복·층별 비용·최악 입력",
+          "exercise": "[4,1,3,2]의 병합과 편향 분할 비교",
+          "oral": "n log n이 되는 조건과 추가 공간"
+        },
+        {
+          "title": "힙·계수·기수와 외부 정렬",
+          "sections": [
+            "sorting",
+            "extensions"
+          ],
+          "scope": "키 범위·안정성·비교 하한·외부 정렬",
+          "exercise": "[21,13,12] LSD 두 단계 직접 수행",
+          "oral": "데이터 크기·범위·메모리에 따른 선택"
+        },
+        {
+          "title": "해시와 충돌",
+          "sections": [
+            "hashing"
+          ],
+          "scope": "체이닝·개방 주소·삭제·부하율",
+          "exercise": "7칸에 10,17,24 저장 후 삭제와 탐색",
+          "oral": "평균 O(1) 조건과 범위 검색 대안"
+        },
+        {
+          "title": "그래프와 BFS",
+          "sections": [
+            "graphs"
+          ],
+          "scope": "인접 행렬/리스트·큐·방문 표시",
+          "exercise": "A에서 E까지 큐와 이전 정점 추적",
+          "oral": "BFS의 최소 간선 수와 가중치 한계"
+        },
+        {
+          "title": "DFS와 재귀",
+          "sections": [
+            "graphs",
+            "recursion"
+          ],
+          "scope": "깊이 우선·스택·되돌아감·순회 비용",
+          "exercise": "방문 순서와 호출 스택 그림 작성",
+          "oral": "DFS/BFS의 순서·시간·공간 비교"
+        },
+        {
+          "title": "최단경로와 MST",
+          "sections": [
+            "graphs"
+          ],
+          "scope": "완화·Dijkstra·Prim·Kruskal",
+          "exercise": "A-B=10,A-C=1,C-B=1 거리 갱신",
+          "oral": "MST와 최단경로가 다른 목적임을 설명"
+        },
+        {
+          "title": "자료구조·알고리즘 통합",
+          "sections": [
+            "complexity",
+            "linear",
+            "trees",
+            "sorting",
+            "hashing",
+            "graphs"
+          ],
+          "scope": "문제 조건에서 구조와 알고리즘 선택",
+          "exercise": "대기열·범위 조회·우선순위에 맞는 구조 제안",
+          "oral": "선택 이유와 포기한 대안의 비용 설명"
+        }
+      ]
+    },
+    {
+      "title": "운영체제와 시스템",
+      "days": [
+        {
+          "title": "프로세스와 스레드",
+          "sections": [
+            "process",
+            "c-scope"
+          ],
+          "scope": "실행·공유/분리·주소 공간과 전역 상태",
+          "exercise": "프로세스 둘과 스레드 둘의 메모리 그림",
+          "oral": "프로세스/스레드를 자원·실행 관점으로 설명"
+        },
+        {
+          "title": "문맥교환과 실행 상태",
+          "sections": [
+            "process"
+          ],
+          "scope": "동시성·병렬성·fork·모드 전환",
+          "exercise": "준비→실행→대기 상태와 저장할 정보 적기",
+          "oral": "문맥교환과 모드 전환의 차이"
+        },
+        {
+          "title": "가상 메모리와 페이징",
+          "sections": [
+            "memory"
+          ],
+          "scope": "주소 분해·페이지 테이블·TLB",
+          "exercise": "페이지 크기 1024, 주소2500의 변환",
+          "oral": "가상 메모리가 단순 디스크 확장이 아닌 이유"
+        },
+        {
+          "title": "페이지 교체와 캐시",
+          "sections": [
+            "memory"
+          ],
+          "scope": "페이지 폴트·FIFO/LRU·지역성",
+          "exercise": "1,2,3,1,4의 FIFO/LRU 상태 비교",
+          "oral": "캐시 미스·TLB 미스·페이지 폴트 구분"
+        },
+        {
+          "title": "스케줄링과 시간 지표",
+          "sections": [
+            "synchronization"
+          ],
+          "scope": "FCFS·SJF·RR와 응답·대기시간",
+          "exercise": "A=5,B=2의 실행 시간선 그리기",
+          "oral": "시간 조각을 줄였을 때 이점과 비용"
+        },
+        {
+          "title": "동기화와 교착상태",
+          "sections": [
+            "synchronization"
+          ],
+          "scope": "경쟁·임계구역·mutex·세마포어",
+          "exercise": "공유 카운터 갱신 손실과 잠금 순서 그리기",
+          "oral": "교착 조건·기아·일관된 잠금 순서"
+        },
+        {
+          "title": "파일·I/O와 OS 복습",
+          "sections": [
+            "extensions",
+            "process",
+            "memory",
+            "synchronization"
+          ],
+          "scope": "원본 장치·파일 시스템·캐시 범위 보충",
+          "exercise": "폴링/인터럽트 비교와 OS 오답 두 개 재풀이",
+          "oral": "메모리와 저장장치의 역할을 연결해 설명"
+        }
+      ]
+    },
+    {
+      "title": "네트워크·DB·원본 언어 비교",
+      "days": [
+        {
+          "title": "주소와 웹 통신",
+          "sections": [
+            "network"
+          ],
+          "scope": "계층·DNS·IP/MAC/포트·웹 요청",
+          "exercise": "외부 서버 요청 경로를 순서대로 그리기",
+          "oral": "게이트웨이 주소와 최종 목적지 주소 구분"
+        },
+        {
+          "title": "TCP·UDP와 전송 제어",
+          "sections": [
+            "network"
+          ],
+          "scope": "연결 설정·신뢰성·흐름/혼잡 제어",
+          "exercise": "SYN/ACK 각 단계의 확인 내용 적기",
+          "oral": "메시지 경계·신뢰성·암호화 구분"
+        },
+        {
+          "title": "DB 키·종속성과 정규화",
+          "sections": [
+            "database"
+          ],
+          "scope": "키·함수 종속·이상·1NF~3NF",
+          "exercise": "학생/수강/학과 표 분해와 종속성 작성",
+          "oral": "정규화 목적과 가정·한계 설명"
+        },
+        {
+          "title": "JOIN·트랜잭션·인덱스",
+          "sections": [
+            "database"
+          ],
+          "scope": "SQL·ACID·잠금·인덱스·스키마",
+          "exercise": "JOIN 결과와 이체 실패 시 복구 상태 적기",
+          "oral": "원자성/격리성 및 인덱스 비용"
+        },
+        {
+          "title": "C와 C++ 객체지향 구분",
+          "sections": [
+            "oop",
+            "c-pointers",
+            "c-structs"
+          ],
+          "scope": "원본의 virtual·상속·STL·참조 전달",
+          "exercise": "C 포인터 인자와 C++ 참조 인자 비교",
+          "oral": "C 구조체에 없는 언어 기능을 정확히 구분"
+        },
+        {
+          "title": "이산수학과 증명",
+          "sections": [
+            "discrete"
+          ],
+          "scope": "집합·함의·함수·관계·귀납법",
+          "exercise": "단사/전사 판별과 1+…+n 귀납 증명",
+          "oral": "예시 확인과 전체 증명의 차이"
+        },
+        {
+          "title": "남은 원본 범위 확인",
+          "sections": [
+            "extensions",
+            "mapping"
+          ],
+          "scope": "Trie·보안·분산·DP·원본 16쪽 대응표",
+          "exercise": "피보나치 표와 해시/암호화/서명 비교",
+          "oral": "빠진 원본 범위와 판독 유보 항목 확인"
+        }
+      ]
+    },
+    {
+      "title": "구술·연구 연결과 최종 보충",
+      "days": [
+        {
+          "title": "연구와 CS 연결",
+          "sections": [
+            "research-bridge"
+          ],
+          "scope": "실제 연구의 입력·출력·지표·한계",
+          "exercise": "본인 기여와 비교 실험의 근거 적기",
+          "oral": "검증된 범위로 90초 연구 설명"
+        },
+        {
+          "title": "C 기초 구술 점검",
+          "sections": [
+            "c-scope",
+            "c-bits",
+            "c-arrays",
+            "c-pointers",
+            "c-structs",
+            "c-memory"
+          ],
+          "scope": "값·주소·수명·연산 순서 종합",
+          "exercise": "코드 두 개를 새 숫자로 추적",
+          "oral": "지역/전역·포인터·구조체를 예제로 설명"
+        },
+        {
+          "title": "자료구조·알고리즘 면접",
+          "sections": [
+            "mock",
+            "linear",
+            "trees",
+            "sorting",
+            "hashing",
+            "graphs"
+          ],
+          "scope": "모의면접 세트 A/B 중 구조·알고리즘",
+          "exercise": "트리·정렬·경로 문제를 종이에 풀이",
+          "oral": "정의→동작→조건 순서로 답변"
+        },
+        {
+          "title": "시스템·DB 면접",
+          "sections": [
+            "mock",
+            "process",
+            "memory",
+            "synchronization",
+            "network",
+            "database"
+          ],
+          "scope": "주소·실행 순서·웹·트랜잭션 연결",
+          "exercise": "주소 변환과 JOIN·정규화 다시 풀기",
+          "oral": "분야를 섞은 질문 다섯 개에 답하기"
+        },
+        {
+          "title": "반례와 연구 꼬리질문",
+          "sections": [
+            "mock",
+            "research-bridge",
+            "oop",
+            "discrete"
+          ],
+          "scope": "모의면접 세트 C와 원본 혼동 정정",
+          "exercise": "잘못된 단정 세 개에 반례 작성",
+          "oral": "본인 기여·한계와 모르는 범위 밝히기"
+        },
+        {
+          "title": "전 과목 모의면접",
+          "sections": [
+            "mock",
+            "practice"
+          ],
+          "scope": "무작위 질문과 자가 평가",
+          "exercise": "틀린 답을 정의·예시·조건으로 고치기",
+          "oral": "열 문항을 답을 가리고 설명"
+        },
+        {
+          "title": "최종 회고와 오답 보충",
+          "sections": [
+            "mock",
+            "research-bridge",
+            "mapping"
+          ],
+          "scope": "새 심화 대신 취약 질문과 원본 대응 확인",
+          "exercise": "면접 전날까지 반복할 질문 다섯 개 선정",
+          "oral": "핵심 답변과 연구 근거 최종 점검"
+        }
+      ]
+    }
+  ]
+}
