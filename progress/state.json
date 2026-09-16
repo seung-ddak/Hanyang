@@ -1,6 +1,26 @@
 {
   "version": 3,
   "fields": {
+    "done:2026-09-16:recall": {
+      "value": false,
+      "stamp": "1789557277868-9da395d7-0b2b-4f8d-9552-c9ba1e96801e"
+    },
+    "done:2026-09-16:read": {
+      "value": false,
+      "stamp": "1789557278216-9da395d7-0b2b-4f8d-9552-c9ba1e96801e"
+    },
+    "done:2026-09-16:exercise": {
+      "value": false,
+      "stamp": "1789557278565-9da395d7-0b2b-4f8d-9552-c9ba1e96801e"
+    },
+    "done:2026-09-16:oral": {
+      "value": false,
+      "stamp": "1789557278848-9da395d7-0b2b-4f8d-9552-c9ba1e96801e"
+    },
+    "done:2026-09-16:note": {
+      "value": false,
+      "stamp": "1789557279048-9da395d7-0b2b-4f8d-9552-c9ba1e96801e"
+    },
     "start_date": {
       "value": "2026-09-16",
       "stamp": "1789531663563-a261078510e9486382fb4b4e9d3d8d05"
@@ -8,26 +28,6 @@
     "interview_date": {
       "value": "",
       "stamp": "1789531663564-a261078510e9486382fb4b4e9d3d8d05"
-    },
-    "done:2026-09-16:recall": {
-      "value": true,
-      "stamp": "1789531663565-a261078510e9486382fb4b4e9d3d8d05"
-    },
-    "done:2026-09-16:read": {
-      "value": true,
-      "stamp": "1789531663566-a261078510e9486382fb4b4e9d3d8d05"
-    },
-    "done:2026-09-16:exercise": {
-      "value": true,
-      "stamp": "1789531663567-a261078510e9486382fb4b4e9d3d8d05"
-    },
-    "done:2026-09-16:oral": {
-      "value": true,
-      "stamp": "1789531663568-a261078510e9486382fb4b4e9d3d8d05"
-    },
-    "done:2026-09-16:note": {
-      "value": true,
-      "stamp": "1789531663569-a261078510e9486382fb4b4e9d3d8d05"
     }
   },
   "notes": {
