@@ -9,7 +9,7 @@ from study_sync import SharedProgress,GitHub
 
 class StudyServer:
     def __init__(self,model,auto_sync=True):
-        self.model=model;self.shared=SharedProgress(model);self.github=GitHub();self.queue=Queue();self.stopped=Event();self.sync_status='동기화 준비';self.auto_sync=auto_sync
+        self.model=model;self.shared=SharedProgress(model);self.github=GitHub();self.queue=Queue();self.stopped=Event();self.sync_requested=Event();self.sync_status='동기화 준비';self.auto_sync=auto_sync
         owner=self
         class Handler(BaseHTTPRequestHandler):
             def log_message(self,*args):pass
@@ -68,14 +68,17 @@ class StudyServer:
             except Exception as e:result.append(e)
             event.set()
         return changed
+    def request_sync(self):
+        self.sync_status='Sync requested...'
+        self.sync_requested.set()
     def sync_loop(self):
         while not self.stopped.is_set():
             try:
                 local=self.call(self.shared.capture);merged=self.github.sync(local);self.call(lambda:self.shared.apply(merged));self.sync_status='GitHub 동기화 완료'
             except Exception as e:self.sync_status='동기화 대기 · '+str(e)
-            self.stopped.wait(30)
+            self.sync_requested.wait(30);self.sync_requested.clear()
     def close(self):
-        self.shared.capture();self.stopped.set();Thread(target=self.http.shutdown,daemon=True).start()
+        self.shared.capture();self.stopped.set();self.sync_requested.set();Thread(target=self.http.shutdown,daemon=True).start()
 
 if __name__=='__main__':
     from study_widget_core import StudyModel

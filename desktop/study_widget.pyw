@@ -49,9 +49,13 @@ class StudyWidgetBase:
         else:done.discard(task_id)
         note=self.notes.get('1.0','end-1c') if self.notes else None
         try:
-            self.cancel_note();self.model.record(plan,done,note);self.status.configure(text='완료 상태를 저장했어요.')
+            self.cancel_note();self.model.record(plan,done,note);self.sync_now();self.status.configure(text='완료 상태를 저장했어요.')
         except (OSError,ValueError) as e:messagebox.showerror('저장 실패',str(e),parent=self.root)
         self.render()
+
+    def sync_now(self):
+        server=getattr(self,'study_server',None)
+        if server:server.request_sync()
 
     def cancel_note(self):
         if self.note_timer:self.root.after_cancel(self.note_timer);self.note_timer=None

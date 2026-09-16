@@ -163,6 +163,7 @@ class DashboardMixin:
                 if is_next or self.expanded_task==task.id:
                     self.label(card.inner,task.label,fg=MUTED if task.id in done else TEXT,font=(FONT,9))
         tools=tk.Frame(self.content,bg=BG);tools.pack(fill='x',pady=(10,6))
+        Button(tools,'\uc9c0\uae08 \ub3d9\uae30\ud654',self.sync_now,height=30).pack(side='left',padx=4)
         self.calendar_button=Button(tools,'달력 접기' if self.calendar_open else '달력 ▾',lambda:self.toggle_panel('calendar_open'),height=30)
         self.calendar_button.pack(side='left')
         if not locked and plan.tasks:
