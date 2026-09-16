@@ -1,4 +1,4 @@
-"""Private GitHub progress sync; credentials stay in Git Credential Manager."""
+"""GitHub progress sync; credentials stay in Git Credential Manager."""
 from copy import deepcopy
 import base64, json, os, re, subprocess, time, uuid, urllib.request, urllib.error
 from study_widget_core import atomic_json, parse_date
@@ -91,12 +91,12 @@ class GitHub:
         if path not in ('','/contents/progress/state.json','/contents/progress/state.json?ref=study-progress'):raise ValueError('허용되지 않은 동기화 경로')
         if method not in ('GET','PUT'):raise ValueError('허용되지 않은 요청')
         if method=='PUT':
-            if not self.request()['private']:raise ValueError('공개 저장소에는 기록을 저장하지 않습니다.')
+
             body={**body,'branch':'study-progress'}
         req=urllib.request.Request('https://api.github.com/repos/seung-ddak/Hanyang'+path,data=json.dumps(body).encode() if body is not None else None,method=method,headers={'Authorization':'Bearer '+self.credential(),'Accept':'application/vnd.github+json','User-Agent':'Hanyang-Study','X-GitHub-Api-Version':'2022-11-28'})
         with urllib.request.urlopen(req,timeout=25) as r:return json.load(r)
     def sync(self,local):
-        if not self.request()['private']:raise ValueError('공개 저장소에는 기록을 저장하지 않습니다.')
+
         for attempt in range(3):
             sha=None
             try:
