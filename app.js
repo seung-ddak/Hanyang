@@ -14,7 +14,7 @@ function current(){let day=start();for(let n=0;n<10000&&complete(day)&&value('un
 function locked(day){return !plan(day)||day>current()}
 function persist(){localStorage.setItem(STORE,JSON.stringify(doc));if(desktop){clearTimeout(localTimer);localTimer=setTimeout(saveDesktop,200)}if(connected){clearTimeout(timer);timer=setTimeout(sync,1600)}}
 function field(key,val){doc.fields[key]={value:val,stamp:stamp()};persist()}
-async function saveDesktop(){try{const r=await fetch('/api/state',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(doc)});if(!r.ok)throw Error(await r.text());doc=P.merge(doc,await r.json());localStorage.setItem(STORE,JSON.stringify(doc));return true}catch(e){$('status').textContent='PC 기록 저장 실패: '+e.message}}
+async function saveDesktop(){try{const r=await fetch('/api/state',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(doc)});if(!r.ok)throw Error(await r.text());const before=JSON.stringify(doc);doc=P.merge(doc,await r.json());localStorage.setItem(STORE,JSON.stringify(doc));if(before!==JSON.stringify(doc)&&document.activeElement?.id!=='memo')render();return true}catch(e){$('status').textContent='PC 기록 저장 실패: '+e.message}}
 function text(tag,content,cls){const el=document.createElement(tag);el.textContent=content;if(cls)el.className=cls;return el}
 function navigate(day,part='read'){selected=day;render();location.hash=part;requestAnimationFrame(()=>document.getElementById(part)?.scrollIntoView())}
 function flushNote(){if(pendingNote){clearTimeout(noteTimer);const {day,value}=pendingNote;pendingNote=null;doc.notes[day]??={};doc.notes[day][stamp()]=value;persist()}}
