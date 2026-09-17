@@ -1,6 +1,14 @@
 {
   "version": 3,
   "fields": {
+    "start_date": {
+      "value": "2026-09-16",
+      "stamp": "1789531663563-a261078510e9486382fb4b4e9d3d8d05"
+    },
+    "interview_date": {
+      "value": "",
+      "stamp": "1789531663564-a261078510e9486382fb4b4e9d3d8d05"
+    },
     "done:2026-09-16:recall": {
       "value": true,
       "stamp": "1789655004550-7b972a31f42f41458bfd9203c180c198"
@@ -20,14 +28,6 @@
     "done:2026-09-16:note": {
       "value": true,
       "stamp": "1789655008052-7b972a31f42f41458bfd9203c180c198"
-    },
-    "start_date": {
-      "value": "2026-09-16",
-      "stamp": "1789531663563-a261078510e9486382fb4b4e9d3d8d05"
-    },
-    "interview_date": {
-      "value": "",
-      "stamp": "1789531663564-a261078510e9486382fb4b4e9d3d8d05"
     },
     "unlock:2026-09-17": {
       "value": true,
