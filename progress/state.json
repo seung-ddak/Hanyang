@@ -38,20 +38,20 @@
       "stamp": "1789655009490-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-17:read": {
-      "value": false,
-      "stamp": "1789655002543-7b972a31f42f41458bfd9203c180c198"
+      "value": true,
+      "stamp": "1789655011570-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-17:exercise": {
-      "value": false,
-      "stamp": "1789655002544-7b972a31f42f41458bfd9203c180c198"
+      "value": true,
+      "stamp": "1789655011571-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-17:oral": {
-      "value": false,
-      "stamp": "1789655002545-7b972a31f42f41458bfd9203c180c198"
+      "value": true,
+      "stamp": "1789655011572-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-17:note": {
-      "value": false,
-      "stamp": "1789655002546-7b972a31f42f41458bfd9203c180c198"
+      "value": true,
+      "stamp": "1789655011573-7b972a31f42f41458bfd9203c180c198"
     },
     "unlock:2026-09-18": {
       "value": true,
