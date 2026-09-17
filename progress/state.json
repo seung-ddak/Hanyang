@@ -14,16 +14,16 @@
       "stamp": "1789655004550-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-16:read": {
-      "value": false,
-      "stamp": "1789655002538-7b972a31f42f41458bfd9203c180c198"
+      "value": true,
+      "stamp": "1789655006324-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-16:exercise": {
-      "value": false,
-      "stamp": "1789655002539-7b972a31f42f41458bfd9203c180c198"
+      "value": true,
+      "stamp": "1789655006325-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-16:oral": {
-      "value": false,
-      "stamp": "1789655002540-7b972a31f42f41458bfd9203c180c198"
+      "value": true,
+      "stamp": "1789655006326-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-16:note": {
       "value": false,
