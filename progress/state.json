@@ -38,12 +38,12 @@
       "stamp": "1789572491385-3a2b1e147d3143e5939572eaad758274"
     },
     "done:2026-09-17:read": {
-      "value": false,
-      "stamp": "1789572491386-3a2b1e147d3143e5939572eaad758274"
+      "value": true,
+      "stamp": "1789653979791-fa9e4b49-d6bf-4516-904a-a73d4f58a04b"
     },
     "done:2026-09-17:exercise": {
-      "value": false,
-      "stamp": "1789572491387-3a2b1e147d3143e5939572eaad758274"
+      "value": true,
+      "stamp": "1789653980615-fa9e4b49-d6bf-4516-904a-a73d4f58a04b"
     },
     "done:2026-09-17:oral": {
       "value": false,
