@@ -10,48 +10,48 @@
       "stamp": "1789531663564-a261078510e9486382fb4b4e9d3d8d05"
     },
     "done:2026-09-16:recall": {
-      "value": true,
-      "stamp": "1789571558912-9249293c6b764b75b89ad1447882892f"
+      "value": false,
+      "stamp": "1789655002537-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-16:read": {
-      "value": true,
-      "stamp": "1789571976433-eb41ad96bb434df08443a74e560dd7cb"
+      "value": false,
+      "stamp": "1789655002538-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-16:exercise": {
-      "value": true,
-      "stamp": "1789572263864-3a2b1e147d3143e5939572eaad758274"
+      "value": false,
+      "stamp": "1789655002539-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-16:oral": {
-      "value": true,
-      "stamp": "1789572322236-3a2b1e147d3143e5939572eaad758274"
+      "value": false,
+      "stamp": "1789655002540-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-16:note": {
-      "value": true,
-      "stamp": "1789572323541-3a2b1e147d3143e5939572eaad758274"
+      "value": false,
+      "stamp": "1789655002541-7b972a31f42f41458bfd9203c180c198"
     },
     "unlock:2026-09-17": {
       "value": true,
       "stamp": "1789571522660-9249293c6b764b75b89ad1447882892f"
     },
     "done:2026-09-17:recall": {
-      "value": true,
-      "stamp": "1789572491385-3a2b1e147d3143e5939572eaad758274"
+      "value": false,
+      "stamp": "1789655002542-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-17:read": {
-      "value": true,
-      "stamp": "1789653979791-fa9e4b49-d6bf-4516-904a-a73d4f58a04b"
+      "value": false,
+      "stamp": "1789655002543-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-17:exercise": {
-      "value": true,
-      "stamp": "1789653980615-fa9e4b49-d6bf-4516-904a-a73d4f58a04b"
+      "value": false,
+      "stamp": "1789655002544-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-17:oral": {
-      "value": true,
-      "stamp": "1789653984110-fa9e4b49-d6bf-4516-904a-a73d4f58a04b"
+      "value": false,
+      "stamp": "1789655002545-7b972a31f42f41458bfd9203c180c198"
     },
     "done:2026-09-17:note": {
-      "value": true,
-      "stamp": "1789654053414-fa9e4b49-d6bf-4516-904a-a73d4f58a04b"
+      "value": false,
+      "stamp": "1789655002546-7b972a31f42f41458bfd9203c180c198"
     },
     "unlock:2026-09-18": {
       "value": true,
