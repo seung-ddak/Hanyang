@@ -11,3 +11,4 @@ Configure Pages yourself using the root static files. No deployment workflow is 
 course.html is the latest study content. original.pdf and original-pages/ preserve the source as an appendix. full_guide.pdf is the reference PDF with the source appendix; the HTML contains the latest lesson layout.
 
 Validation: cd desktop and run python -m unittest test_study -v.
+
