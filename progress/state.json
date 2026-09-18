@@ -10,32 +10,32 @@
       "stamp": "1789531663564-a261078510e9486382fb4b4e9d3d8d05"
     },
     "done:2026-09-16:recall": {
-      "value": false,
-      "stamp": "1789694148393-81c3d58fdc114947a1e948041ffa5483"
+      "value": true,
+      "stamp": "1789696204591-a6e35e21157847cbacacefccdac909f2"
     },
     "done:2026-09-16:read": {
-      "value": false,
-      "stamp": "1789694148394-81c3d58fdc114947a1e948041ffa5483"
+      "value": true,
+      "stamp": "1789696205415-a6e35e21157847cbacacefccdac909f2"
     },
     "done:2026-09-16:exercise": {
-      "value": false,
-      "stamp": "1789694148395-81c3d58fdc114947a1e948041ffa5483"
+      "value": true,
+      "stamp": "1789696206041-a6e35e21157847cbacacefccdac909f2"
     },
     "done:2026-09-16:oral": {
-      "value": false,
-      "stamp": "1789694148396-81c3d58fdc114947a1e948041ffa5483"
+      "value": true,
+      "stamp": "1789696206828-a6e35e21157847cbacacefccdac909f2"
     },
     "done:2026-09-16:note": {
-      "value": false,
-      "stamp": "1789694148397-81c3d58fdc114947a1e948041ffa5483"
+      "value": true,
+      "stamp": "1789696207783-a6e35e21157847cbacacefccdac909f2"
     },
     "unlock:2026-09-17": {
       "value": true,
       "stamp": "1789655441160-7be0968f-041a-421e-b1fc-fab87bbc77b7"
     },
     "done:2026-09-17:recall": {
-      "value": false,
-      "stamp": "1789694148398-81c3d58fdc114947a1e948041ffa5483"
+      "value": true,
+      "stamp": "1789696210292-a6e35e21157847cbacacefccdac909f2"
     },
     "done:2026-09-17:read": {
       "value": false,
