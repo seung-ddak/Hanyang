@@ -56,6 +56,10 @@
     "unlock:2026-09-18": {
       "value": true,
       "stamp": "1789733081001-05f3f6ed-c160-4fc2-a3f7-2c50cea941de"
+    },
+    "done:2026-09-18:recall": {
+      "value": true,
+      "stamp": "1789733086851-05f3f6ed-c160-4fc2-a3f7-2c50cea941de"
     }
   },
   "notes": {
